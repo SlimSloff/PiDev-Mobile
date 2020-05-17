@@ -1,0 +1,36 @@
+login_api:
+     path:     /login/{username}/{password}
+     defaults: { _controller: MobileApiBundle:MobileApi:Login }
+
+fetch_api:
+     path:     /fetch/{id}
+     defaults: { _controller: MobileApiBundle:MobileApi:fetch }
+
+fetch_posts_api:
+     path:     /fetch_posts/{id}
+     defaults: { _controller: MobileApiBundle:MobileApi:fetchPosts }
+
+update_api:
+     path:     /update_user
+     defaults: { _controller: MobileApiBundle:MobileApi:Update }
+
+Register_api:
+     path:     /register
+     defaults: { _controller: MobileApiBundle:MobileApi:Register }
+
+
+reply_api:
+     path:     /reply/{user_id}/{post_id}/{content}
+     defaults: { _controller: MobileApiBundle:MobileApi:Reply }
+
+show_topics_api:
+     path:     /showtopics
+     defaults: { _controller: MobileApiBundle:MobileApi:showTopics }
+
+show_pinned_api:
+     path:     /showpinned
+     defaults: { _controller: MobileApiBundle:MobileApi:showPinned }
+
+delete_post_api:
+     path:     /delete_post/{id}
+     defaults: { _controller: MobileApiBundle:MobileApi:deletePost }
